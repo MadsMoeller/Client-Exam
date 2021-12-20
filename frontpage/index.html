@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Egedal Kommunalvalg 2021</title>
+</head>
+<body>
+    <nav>
+        <h1>Kommunalvalg 2021 - Egedal kommune</h1>
+        <a href="../frontpage/index.html">Kandidater</a>
+        <a href="../results/result.html">Resultat</a>
+    </nav>
+
+    <br>
+
+    <button id="expand-candidate-form">Kandidat ➕</button>
+    <div id="create-candidate-form"></div>
+
+    <button id="sort-by-name" class="sort-btn">Sortér efter navn</button>
+    <button id="sort-by-party" class="sort-btn">Sortér efter parti</button>
+    <button id="sort-by-votes" class="sort-btn">Sortér efter stemmer</button>
+    <table>
+        <thead>
+            <tr>
+                <td>Navn</td>
+                <td>Parti</td>
+                <td>Personlige stemmer</td>
+                <td>Opdatér</td>
+                <td>Slet</td>
+            </tr>
+        </thead>
+        <tbody id="candidates-tbody"></tbody>
+    </table>
+
+    <script src="../lib/global.js"></script>
+    <script src="./index.js"></script>
+    <script src="./createCandidate.js"></script>
+    <script src="./updateCandidate.js"></script>
+
+</body>
+</html>
